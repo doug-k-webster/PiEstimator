@@ -3,3 +3,5 @@
 ################################################################################
 
 /PiEstimator/.vs/PiEstimator/v14
+/PiEstimator/bin/Debug
+/PiEstimator/obj/Debug
