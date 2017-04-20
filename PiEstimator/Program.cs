@@ -16,6 +16,7 @@
         private static void NilakanthaSeries()
         {
             // Nilakantha series
+            // https://en.wikipedia.org/wiki/Nilakantha_Somayaji
             double pi = 3d;
 
             double sign = 1;
@@ -57,6 +58,7 @@
 
         private static void GregoryLeibnizSeries()
         {
+            // https://en.wikipedia.org/wiki/Leibniz_formula_for_%CF%80
             // Gregory–Leibniz series
             double pi = 0d;
 
