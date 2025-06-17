@@ -44,7 +44,14 @@
             BigInteger pi = 3 * multiplier;
             for (BigInteger i = 2; i < int.MaxValue; i += 2)
             {
-                BigInteger delta = multiplier * sign * 4 / (i * (i + 1) * (i + 2));
+                BigInteger denominator = i * (i + 1) * (i + 2);
+                BigInteger numerator = multiplier * 4;
+                BigInteger quotient = BigInteger.DivRem(numerator, denominator, out BigInteger remainder);
+                BigInteger delta = sign * quotient;
+                if (remainder * 2 >= denominator)
+                {
+                    delta += sign;
+                }
                 pi = pi + delta;
 
                 if ((int) i % 10000000 == 0)
